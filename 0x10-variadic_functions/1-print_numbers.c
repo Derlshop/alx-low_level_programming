@@ -25,3 +25,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_end(pos);
 }
+
+int main(void)
+{
+	print_numbers(4,72,55,8,10,56,78,6);
+	return 0;
+}
