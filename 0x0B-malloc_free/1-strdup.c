@@ -1,34 +1,35 @@
-include "main.h"
 #include <stdlib.h>
-
+#include<main.h>
 /**
- * _strdup - Returns a pointer to a newly-allocated space in memory
- *           containing a copy of the string given as parameter.
- * @str: The string to be copied.
+ * *_strdup - a function that duplicates a string
  *
- * Return: If str == NULL or insufficient memory is available - NULL.
- *         Otherwise - a pointer to the duplicated string.
- */
+ * @str: input string
+ *
+ * Return: NULL if str == NULL
+ *         @str
+*/
+
 char *_strdup(char *str)
 {
-	char *duplicate;
-	int index, len = 0;
+	int i = 0, a = 0;
+	char *z;
 
 	if (str == NULL)
 		return (NULL);
 
-	for (index = 0; str[index]; index++)
-		len++;
+	/*calculate size of str*/
+	while (str[a] != '\0')
+		a++;
 
-	duplicate = malloc(sizeof(char) * (len + 1));
-
-	if (duplicate == NULL)
+	z = malloc((a + 1) * sizeof(char));
+	if (z == NULL)
 		return (NULL);
 
-	for (index = 0; str[index]; index++)
-		duplicate[index] = str[index];
+	while (str[i] != '\0')
+	{
+		z[i] = str[i];
+		i++;
+	}
 
-	duplicate[len] = '\0';
-
-	return (duplicate);
+	return (z);
 }
