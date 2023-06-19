@@ -1,5 +1,5 @@
-#ifndef _OBJECT_LIKE_MACRO_H 
-#define _OBJECT_LIKE_MACRO_H
+#ifndef OBJECT_LIKE_MACRO_H 
+#define OBJECT_LIKE_MACRO_H
 
 /*
  * file defines the valie of size assigne to
