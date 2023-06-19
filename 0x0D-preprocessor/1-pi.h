@@ -1,5 +1,5 @@
-#ifndef _PI_H
-#define _PI_H
+#ifndef PI_H
+#define PI_H
 /*
  * FILE- 1-PI.H
  * desc: header file defines a header pi as 
