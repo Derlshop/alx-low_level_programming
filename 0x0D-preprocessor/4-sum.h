@@ -1,5 +1,5 @@
-#ifndef _SUM_H
-#define _SUM_H
+#ifndef SUM_H
+#define SUM_H
 
 /*
  * File- sum.h
@@ -8,6 +8,6 @@
  * return 0
  */
 
-#define SUM(x, y) ((x) + (y));
+#define SUM(x, y) ((x) + (y))
 
 #endif
