@@ -18,7 +18,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		printf("%d", va_arg(pos, int));
 
 		if (j != (n - 1) && separator != NULL)
-			printf("%s"separator);
+			printf("%s",separator);
 	}
 
 	printf("\n");
@@ -26,8 +26,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_end(pos);
 }
 
-int main(void)
-{
-	print_numbers(4,72,55,8,10,56,78,6);
-	return 0;
-}
+
+
+
+
+
