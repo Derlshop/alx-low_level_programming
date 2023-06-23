@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * Programme print numbers followed by new line
- * Authut: Nweke Samuel
- * Date 21 April 2023
+ * File-Programme print numbers followed by new line
+ *@n- number of strings to be printed
+ *@separator- strings to be printed
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
